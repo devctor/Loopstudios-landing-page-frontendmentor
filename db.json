@@ -1,0 +1,104 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "Immersive experiences that deliver",
+      "content": "typicode",
+      "images": {
+        "mobile": "mobile/image-hero.jpg",
+        "desktop": "desktop/image-hero.jpg"
+      }
+    },
+    {
+      "id": 2,
+      "title": "The leader in interactive VR",
+      "content": "Founded in 2011, Loopstudios has been producing world-class virtual reality projects for some of the best companies around the globe. our award winning creations have been transformed businesses through digital experiences that bind to their brand.",
+      "images": {
+        "mobile": "mobile/image-interactive.jpg",
+        "desktop": "desktop/image-interactive.jpg"
+      }
+    }
+  ],
+  "creations": [
+    {
+      "id": 1,
+      "title": "Deep earth",
+      "images": {
+        "mobile": "mobile/image-deep-earth.jpg",
+        "desktop": "desktop/image-deep-earth.jpg"
+      }
+    },
+    {
+      "id": 2,
+      "title": "Night arcade",
+      "images": {
+        "mobile": "mobile/image-night-arcade.jpg",
+        "desktop": "desktop/image-night-arcade.jpg"
+      }
+    },
+    {
+      "id": 3,
+      "title": "Soccer team VR",
+      "images": {
+        "mobile": "mobile/image-soccer-team.jpg",
+        "desktop": "desktop/image-soccer-team.jpg"
+      }
+    },
+    {
+      "id": 4,
+      "title": "The grid",
+      "images": {
+        "mobile": "mobile/image-grid.jpg",
+        "desktop": "desktop/image-grid.jpg"
+      }
+    },
+    {
+      "id": 5,
+      "title": "From up above VR",
+      "images": {
+        "mobile": "mobile/image-from-above.jpg",
+        "desktop": "desktop/image-from-above.jpg"
+      }
+    },
+    {
+      "id": 6,
+      "title": "pocket borealis",
+      "images": {
+        "mobile": "mobile/image-pocket-borealis.jpg",
+        "desktop": "desktop/image-pocket-borealis.jpg"
+      }
+    },
+    {
+      "id": 7,
+      "title": "The curiosity",
+      "images": {
+        "mobile": "mobile/image-curiosity.jpg",
+        "desktop": "desktop/image-curiosity.jpg"
+      }
+    },
+    {
+      "id": 8,
+      "title": "Make it fisheye",
+      "images": {
+        "mobile": "mobile/image-fisheye.jpg",
+        "desktop": "desktop/image-fisheye.jpg"
+      }
+    }
+  ],
+  "landing": {
+    "heroPostId": 1,
+    "featuredPostId": 2
+  },
+  "menu": {
+    "items": [
+      "about",
+      "carrers",
+      "events",
+      "products",
+      "support"
+    ]
+  },
+  "icons": {
+    "fb": "icon-facebook.svg"
+  }
+}

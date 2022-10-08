@@ -1,32 +1,49 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import './App.css'
+import { normalize } from 'stitches-normalize-css'
+import '@fontsource/josefin-sans'
+import '@fontsource/alata'
+import '@fontsource/josefin-sans/300.css'
+import type * as Stitches from '@stitches/react'
+import { globalCss, theme, styled } from '../stitches.config'
+import Header from './components/Header'
+import Landing from './components/Landing'
+
+const CustomGlobalStyles: Record<string, Stitches.CSS> = {
+  '*, *:before, *:after': {
+    boxSizing: 'border-box'
+  },
+  body: {
+    backgroundColor: theme.colors.white.value,
+    fontFamily: '$josefin',
+    fontSize: '$rs'
+  },
+  img: {
+    width: '100%'
+  },
+  'button:hover': {
+    borderColor: 'none'
+  },
+  'button:focus, button:focusVisible': {
+    outline: 'none'
+  },
+  'h2': {
+    color: '$black',
+    textTransform: 'uppercase',
+    fontSize: '2rem',
+    lineHeight: '1.25',
+    fontWeight: '300',
+    textAlign: 'center'
+  }
+}
+
+const globalStyles = globalCss(...normalize, CustomGlobalStyles)
 
 function App() {
-  const [count, setCount] = useState(0)
-
+  globalStyles()
   return (
     <div className="App">
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src="/vite.svg" className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://reactjs.org" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      <Header />
+      <Landing />
+      {/* Footer */}
     </div>
   )
 }
