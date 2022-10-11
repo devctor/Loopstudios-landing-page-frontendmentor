@@ -4,7 +4,7 @@ test.beforeEach(async ({ page }) => {
   await page.goto('http://localhost:5173')
 })
 
-test.describe.only('<Creations />', () => {
+test.describe('<Creations />', () => {
   test('Should contain H2 title', async ({ page }) => {
     const headerTitle = page.locator('_react=Creations >> h2')
     await expect(headerTitle).toHaveText(/our creations/i)

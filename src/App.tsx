@@ -6,6 +6,7 @@ import type * as Stitches from '@stitches/react'
 import { globalCss, theme, styled } from '../stitches.config'
 import Header from './components/Header'
 import Landing from './components/Landing'
+import Footer from './components/Footer'
 
 const CustomGlobalStyles: Record<string, Stitches.CSS> = {
   '*, *:before, *:after': {
@@ -43,7 +44,7 @@ function App() {
     <div className="App">
       <Header />
       <Landing />
-      {/* Footer */}
+      <Footer />
     </div>
   )
 }
