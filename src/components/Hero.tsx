@@ -15,11 +15,12 @@ const HeroCont = styled('div', {
   // top: '0',
   zIndex: '1',
   display: 'grid',
-  gridTemplateColumns: '100%',
-  gridTemplateRows: '$hero',
+  // gridTemplateColumns: '100%',
+  // gridTemplateRows: '$hero',
   placeContent: 'center',
   '& h1': {
-    fontSize: '40px',
+    // fontSize: '40px',
+    fontSize: 'clamp(2rem, 9.5vw, 4.5rem)',
     fontWeight: '300',
     border: '1px solid $white',
     padding: '$2',
@@ -35,7 +36,32 @@ const HeroCont = styled('div', {
     gridRow: '1/1',
     height: '$hero',
     objectFit: 'cover'
-  }
+  },
+  '@hero': {
+    'h1': {
+      wordSpacing: 'normal',
+      maxWidth: '700px'
+    }
+  },
+  '@bp1': {
+    gridTemplateColumns: '1fr 2fr 1fr',
+    placeItems: 'start',
+    'h1': {
+      // width: '50%',
+      marginBlock: 'auto',
+      gridArea: '1 / 1 / 1 / 4',
+      // fontSize: '80px',
+    },
+    'img': {
+      gridArea: '1 / 4 / 1 / 1'
+    }
+  },
+  '@bp2': {
+    gridTemplateColumns: '1fr 1280px 1fr',
+    'h1':{
+      gridArea: '1 / 2 / 1 / 4',
+    }
+  },
 })
 
 const Hero = ({ post }: { post: Posts }) => {

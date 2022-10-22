@@ -12,6 +12,7 @@ const CustomGlobalStyles: Record<string, Stitches.CSS> = {
   '*, *:before, *:after': {
     boxSizing: 'border-box'
   },
+  // '*': { outline: '1px solid blue'},
   body: {
     backgroundColor: theme.colors.white.value,
     fontFamily: '$josefin',

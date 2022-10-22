@@ -28,10 +28,14 @@ export const {
       josefin: 'Josefin Sans, sans-serif'
     },
     sizes: {
-      hero: '90vh'
+      hero: '90vh',
+      2: '20px'
     }
   },
   media: {
-    bp1: '(min-width: 480px)'
+    hero: '(min-width: 480px)',
+    creationsList: '(min-width: 630px)',
+    bp1: '(min-width: 980px)',
+    bp2: '(min-width: 1280px)'
   }
 })

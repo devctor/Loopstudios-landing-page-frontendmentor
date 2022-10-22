@@ -3,7 +3,11 @@ import FeaturedPost from './FeaturedPost'
 import Creations from './Creations'
 import useFetch from '../hooks/useFetch'
 import { Posts } from '../types'
+import { styled } from '../../stitches.config'
 
+const Main = styled('main', {
+  width: '100vw'
+})
 const Landing = () => {
   const { data: landingData } = useFetch('http://localhost:3000/landing')
   const { data: postsData } = useFetch('http://localhost:3000/posts')
@@ -14,11 +18,11 @@ const Landing = () => {
   // console.log(landingData?.heroPostId)
   // console.log(heroPostId, featuredPostId, featuredPost)
   return (
-    <main>
+    <Main>
       <Hero post={heroPost} />
       <FeaturedPost post={featuredPost} />
       <Creations posts={creationsData} />
-    </main>
+    </Main>
   )
 }
 
