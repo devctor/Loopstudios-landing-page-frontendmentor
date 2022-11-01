@@ -17,7 +17,7 @@ const FooterContainer = styled('footer', {
     display: 'flex',
     justifyContent: 'center',
     marginInline: 'auto',
-    marginBlock: 'calc($2 * 2)',
+    marginBlock: 'calc($2 * 2)'
   },
   '.footer-nav ul': {
     listStyle: 'none',
@@ -51,7 +51,7 @@ const FooterContainer = styled('footer', {
     },
     'img': {
       flex: '0 0 10%',
-      maxWidth: '45px',
+      maxWidth: '45px'
     }
   },
   '.foot-note': {
@@ -68,15 +68,15 @@ const FooterContainer = styled('footer', {
       gridArea: '1 / 1 / 2 / 2',
       display: 'block',
       width: '100%',
-      marginBlock: '$2',
+      marginBlock: '$2'
     },
     '.footer-nav': {
       gridArea: '2 / 1 / 2 / 2',
       'ul': {
-        flexDirection: 'row',
+        flexDirection: 'row'
       },
       'ul li': {
-        fontSize: '16px',
+        fontSize: '16px'
       }
     },
     '.social-icons': {
@@ -85,7 +85,7 @@ const FooterContainer = styled('footer', {
       'img': {
         flex: '0',
         width: '23px',
-        height: '23px',
+        height: '23px'
       },
       'li': {
         height: '25px'
@@ -98,8 +98,8 @@ const FooterContainer = styled('footer', {
         left: '0',
         width: '100%',
         height: '2px',
-        zIndex: '4',
-      },
+        zIndex: '4'
+      }
     },
     '.foot-note': {
       textAlign: 'right'
@@ -112,7 +112,7 @@ const FooterContainer = styled('footer', {
     }
   },
   '@bp2': {
-    gridTemplateColumns: 'repeat(2, calc(1280px / 2 ))',
+    gridTemplateColumns: 'repeat(2, calc(1280px / 2 ))'
   }
 
 })
@@ -120,10 +120,10 @@ const FooterContainer = styled('footer', {
 const Icons = () => (
   <div className='social-icons'>
     <ul>
-      {iconImages.map((icon: string) => (
-        <li>
+      {iconImages.map((icon) => (
+        <li key={icon}>
           <a href="#">
-            <img key={icon.split('.')} src={icon} />
+            <img alt="Social media icon" src={icon} />
           </a>
         </li>
       )

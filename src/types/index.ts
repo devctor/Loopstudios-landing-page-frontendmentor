@@ -1,6 +1,10 @@
+interface Images {
+  desktop: string
+  mobile: string
+}
 export interface Posts {
   id: number
-  images: string[]
+  images: Images
   title: string
   content?: string
 }

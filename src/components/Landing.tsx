@@ -1,7 +1,7 @@
 import Hero from './Hero'
 import FeaturedPost from './FeaturedPost'
 import Creations from './Creations'
-import useFetch from '../hooks/useFetch'
+// import useFetch from '../hooks/useFetch'
 import { Posts } from '../types'
 import { styled } from '../../stitches.config'
 import dbData from '../../db.json'

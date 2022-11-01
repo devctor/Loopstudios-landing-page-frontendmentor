@@ -7,7 +7,7 @@ const Button = styled('Button', {
   color: '$black',
   textTransform: 'uppercase',
   borderRadius: '0',
-  fontSize: '1.3em',
+  fontSize: '1.3em'
 })
 
 export default Button

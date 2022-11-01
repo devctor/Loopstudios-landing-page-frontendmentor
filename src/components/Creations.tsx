@@ -10,7 +10,7 @@ const PostList = styled('section', {
     paddingInline: '$2',
     display: 'flex',
     flexDirection: 'column',
-    gap: '$2',
+    gap: '$2'
   },
   '.post-grid article': {
     backgroundColor: 'pink',
@@ -19,7 +19,7 @@ const PostList = styled('section', {
     gridTemplateRows: 'auto',
     position: 'relative',
     'img, h3': {
-      gridArea: '1 / 1 / 1 / 1',
+      gridArea: '1 / 1 / 1 / 1'
     },
     'h3': {
       textTransform: 'uppercase',
@@ -31,7 +31,7 @@ const PostList = styled('section', {
       width: '150px',
       // width: 'clamp(125px, 5vw, 600px)',
       zIndex: '1',
-      lineHeight: '1',
+      lineHeight: '1'
     },
     // 'img': {
     //   height: '240px',
@@ -45,14 +45,14 @@ const PostList = styled('section', {
       position: 'absolute',
       top: '0',
       left: '0',
-      opacity: '.4',
-    },
+      opacity: '.4'
+    }
   },
   [`& ${Button}`]: {
     display: 'block',
     marginInline: 'auto',
     marginBlockStart: '$2',
-    marginBlockEnd: 'calc($2 * 2)',
+    marginBlockEnd: 'calc($2 * 2)'
   },
   '@creationsList': {
     '.post-grid': {
@@ -100,7 +100,7 @@ const PostList = styled('section', {
         flex: ' 0 0 23%',
         '&:hover:after': {
           backgroundColor: '$white',
-          opacity: '.6',
+          opacity: '.6'
         },
         '&:hover h3': {
           color: '$black'
