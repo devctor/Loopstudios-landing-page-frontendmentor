@@ -1,7 +1,7 @@
 import { styled } from '../../../stitches.config'
 import '@fontsource/josefin-sans/300.css'
 
-const Button = styled('Button', {
+const Button = styled('button', {
   backgroundColor: '$white',
   border: '1px solid $black',
   color: '$black',
