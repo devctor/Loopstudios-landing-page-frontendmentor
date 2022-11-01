@@ -18,11 +18,14 @@ const NavCont = styled('nav', {
     display: 'flex',
     flexDirection: 'column',
     padding: '0 $2',
-    gap: '33px',
+    gap: '50px',
     'li': {
       fontSize: '40px',
-      fontWeight: '300',
-      textTransform: 'uppercase'
+      textTransform: 'uppercase',
+      'a': {
+        fontWeight: '300',
+        color: '$white'
+      }
     }
   },
   '@bp1': {
@@ -31,9 +34,6 @@ const NavCont = styled('nav', {
     height: 'auto',
     maxWidth: '1280px',
     backgroundColor: 'transparent',
-        '&:hover': {
-          color: 'red'
-        },
     'ul': {
       flexDirection: 'row',
       marginInlineStart: 'auto',

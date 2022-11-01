@@ -30,9 +30,13 @@ const PostList = styled('section', {
       fontSize: 'clamp(1em, 5vw, 2em)',
       width: '150px',
       // width: 'clamp(125px, 5vw, 600px)',
-      zIndex: '2',
+      zIndex: '1',
       lineHeight: '1',
     },
+    // 'img': {
+    //   height: '240px',
+    //   objectFit: 'cover'
+    // },
     ['&::after']: {
       content: '',
       width: '100%',
@@ -70,6 +74,7 @@ const PostList = styled('section', {
       gridArea: '1 / 1 / 2 / 2',
       textAlign: 'left',
       marginInlineStart: '$2',
+      fontSize: '2.5rem',
       alignSelf: 'center'
     },
     [`& ${Button}`]: {
@@ -107,6 +112,12 @@ const PostList = styled('section', {
     }
   },
   '@bp2': {
+    '.post-grid': {
+      marginBlock: 'calc($2 * 3)',
+      'article h3': {
+        width: '180px'
+      }
+    },
     [`& ${Button}`]: {
       marginBlockStart: ' auto',
       marginBlockEnd: ' auto'

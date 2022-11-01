@@ -34,7 +34,7 @@ const HeroCont = styled('div', {
   'img': {
     gridColumn: '1/1',
     gridRow: '1/1',
-    height: '$hero',
+    minHeight: '$hero',
     objectFit: 'cover'
   },
   '@hero': {

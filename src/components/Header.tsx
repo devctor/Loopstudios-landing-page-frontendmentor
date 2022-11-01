@@ -5,6 +5,7 @@ import BtnMenu from './ui/BtnMenu'
 import Nav from './Nav'
 import useFetch from '../hooks/useFetch'
 import Logo from './Logo'
+import dbData from '../../db.json'
 
 const HeaderCont = styled('header', {
   position: 'fixed',
@@ -62,14 +63,16 @@ const HeaderCont = styled('header', {
     display: 'grid',
     gridTemplateColumns: '1fr 1280px 1fr',
     '& > div': {
-      gridArea: '1 / 2 / 2 / 2'
+      gridArea: '1 / 2 / 2 / 2',
+      paddingInlineStart: '10px'
     }
   }
 })
 
 const Header = () => {
   const [toggleMenu, setToggleMenu] = useState<boolean>(false)
-  const { data, loading, error } = useFetch('http://localhost:3000/menu')
+  // const { data, loading, error } = useFetch('http://localhost:3000/menu')
+  const data = dbData.menu
   const menuHandler = () => {
     setToggleMenu(!toggleMenu)
     console.log(data.items, 'data items')
