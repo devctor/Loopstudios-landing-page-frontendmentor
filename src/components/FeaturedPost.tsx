@@ -55,8 +55,6 @@ const FeaturedPostCont = styled('section', {
 })
 const FeaturedPost = ({ post }: { post: Posts[] }) => {
   const { title, content, images } = post[0] || {}
-  // console.log('title', title, 'images', images)
-  // console.log('posts herw', post)
   return (
     <FeaturedPostCont>
       <img src={`./images/${images?.mobile}`}

@@ -75,7 +75,6 @@ const Header = () => {
   const data = dbData.menu
   const menuHandler = () => {
     setToggleMenu(!toggleMenu)
-    console.log(data.items, 'data items')
   }
   return (
     <>

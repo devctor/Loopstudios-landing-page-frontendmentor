@@ -19,9 +19,6 @@ const Landing = () => {
   const { heroPostId, featuredPostId } = landingData ?? {}
   const heroPost = postsData?.filter((p: Posts) => p.id === heroPostId) ?? {}
   const featuredPost = postsData?.filter((p: Posts) => p.id === featuredPostId) ?? {}
-  // console.log(landingData?.heroPostId)
-  // console.log(heroPostId, featuredPostId, featuredPost)
-  console.log('ddddkw', dbData)
   return (
     <Main>
       <Hero post={heroPost} />

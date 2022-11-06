@@ -65,7 +65,6 @@ type NavProps = {
 }
 const Nav = ({ menuItems, toggle }: NavProps) => {
   // const { status, fetchNow } = useFetch()
-  console.log(menuItems, toggle, 'tgg')
 
   return (
     <NavCont displayNav={{ '@initial': toggle, '@bp1': 'true' }}>

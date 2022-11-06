@@ -126,7 +126,6 @@ const PostList = styled('section', {
   }
 })
 const Creations = ({ posts }: { posts: Posts[] }) => {
-  console.log('posts creat', posts)
   return (
     <PostList>
       <h2>our Creations</h2>

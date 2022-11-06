@@ -1,6 +1,7 @@
 import { styled } from '../../stitches.config'
 import Logo from '../components/Logo'
 import useFetch from '../hooks/useFetch'
+import dbData from '../../db.json'
 
 const iconImages = [
   './images/icon-facebook.svg',
@@ -134,9 +135,8 @@ const Icons = () => (
 )
 
 const Footer = () => {
+  console.log(dbData)
   const { data } = useFetch('http://localhost:3000/menu')
-  console.log(data, 'mifoot')
-  // console.log(iconFb)
   return (
     <FooterContainer>
       <div className='footer-logo'>
@@ -144,7 +144,7 @@ const Footer = () => {
       </div>
       <div className='footer-nav'>
         <ul>
-          {data && data.items.map((item: string) => (
+          {dbData && dbData.menu.items.map((item: string) => (
             <li key={item}><a href="#">{item}</a></li>
           ))}
         </ul>
