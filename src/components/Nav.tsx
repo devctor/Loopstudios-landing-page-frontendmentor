@@ -45,6 +45,33 @@ const NavCont = styled('nav', {
           color: '$white'
         }
       }
+    },
+    '& ul li': {
+      position: 'relative',
+      zIndex: '4',
+      'a::after': {
+        content: `''`,
+        background: '$white',
+        position: 'absolute',
+        bottom: '-10px',
+        left: '30%',
+        width: '50%',
+        height: '4px',
+        zIndex: '4',
+        opacity: '0',
+        transition: 'all .6s ease'
+      },
+      'a:hover::after': {
+        content: `''`,
+        background: '$white',
+        position: 'absolute',
+        bottom: '-10px',
+        left: '30%',
+        width: '50%',
+        height: '4px',
+        zIndex: '4',
+        opacity: '1'
+      },
     }
   },
   variants: {

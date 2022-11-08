@@ -37,23 +37,6 @@ const HeaderCont = styled('header', {
       'ul': {
         flexDirection: 'row',
       },
-      'ul li': {
-        position: 'relative',
-        zIndex: '4',
-        'a::after': {
-          transition: 'all 5s ease'
-        },
-        'a:hover::after': {
-          content: `''`,
-          background: '$white',
-          position: 'absolute',
-          bottom: '-10px',
-          left: '30%',
-          width: '50%',
-          height: '4px',
-          zIndex: '4',
-        },
-      }
     },
     [`& ${BtnMenu}`]: {
       display: 'none'

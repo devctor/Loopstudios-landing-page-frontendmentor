@@ -45,14 +45,16 @@ const PostList = styled('section', {
       position: 'absolute',
       top: '0',
       left: '0',
-      opacity: '.4'
+      opacity: '.4',
+      transition: 'all .6s ease'
     }
   },
   [`& ${Button}`]: {
     display: 'block',
     marginInline: 'auto',
     marginBlockStart: '$2',
-    marginBlockEnd: 'calc($2 * 2)'
+    marginBlockEnd: 'calc($2 * 2)',
+    transition: 'all .6s ease'
   },
   '@creationsList': {
     '.post-grid': {

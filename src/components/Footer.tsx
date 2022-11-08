@@ -47,7 +47,8 @@ const FooterContainer = styled('footer', {
       padding: '0',
       gap: '$2',
       'li': {
-        listStyle: 'none'
+        listStyle: 'none',
+        position: 'relative'
       }
     },
     'img': {
@@ -78,7 +79,25 @@ const FooterContainer = styled('footer', {
       },
       'ul li': {
         fontSize: '16px'
+      },
+      'li a': {
+        position: 'relative'
+      },
+      'ul li a::after': {
+        transition: 'all .6s ease',
+      },
+      'ul li a:hover::after': {
+        content: `''`,
+        background: '$white',
+        position: 'absolute',
+        bottom: '-10px',
+        left: '30%',
+        width: '50%',
+        height: '2px',
+        zIndex: '4',
+        opacity: '1'
       }
+
     },
     '.social-icons': {
       marginBlock: '$2',
@@ -89,17 +108,30 @@ const FooterContainer = styled('footer', {
         height: '23px'
       },
       'li': {
-        height: '25px'
+        height: '25px',
+      },
+      'ul li a::after': {
+        content: `''`,
+        background: 'transparent',
+        position: 'absolute',
+        bottom: '-10px',
+        left: '30%',
+        width: '50%',
+        height: '2px',
+        zIndex: '4',
+        transition: 'all .6s ease',
+        opacity: '0'
       },
       'ul li a:hover::after': {
         content: `''`,
         background: '$white',
         position: 'absolute',
         bottom: '-10px',
-        left: '0',
-        width: '100%',
+        left: '30%',
+        width: '50%',
         height: '2px',
-        zIndex: '4'
+        zIndex: '4',
+        opacity: '1'
       }
     },
     '.foot-note': {
