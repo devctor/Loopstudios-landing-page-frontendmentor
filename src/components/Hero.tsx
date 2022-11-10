@@ -64,6 +64,8 @@ const Hero = ({ post }: { post: Posts[] }) => {
         srcSet={`./images/${post[0]?.images.mobile} 650w,
           ./images/${post[0]?.images.desktop} 1280w`}
         alt={post[0]?.title}
+        sizes="(max-width: 650px) 650px,
+            (max-width: 1280px) 1280px"
       />
     </HeroCont>
   )

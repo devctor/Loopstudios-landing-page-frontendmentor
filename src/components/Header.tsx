@@ -64,7 +64,7 @@ const Header = () => {
       <HeaderCont>
         <div>
           <div className='top-nav'>
-            <a href='/'>
+            <a href='/' aria-label="Loopstudios logo">
               <Logo />
             </a>
             <BtnMenu toggle={toggleMenu} onClick={menuHandler}>

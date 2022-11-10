@@ -137,7 +137,10 @@ const Creations = ({ posts }: { posts: Posts[] }) => {
             <img src={`./images/${post.images.mobile}`}
               srcSet={`./images/${post.images.mobile} 650w,
               ./images/${post.images.desktop} 1280w`}
-              alt={post.title} />
+              alt={post.title}
+              sizes="(max-width: 294px) 294px,
+              (max-width: 357px) 294px"
+            />
             <h3>{post.title}</h3>
           </article>
         ))}
