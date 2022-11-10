@@ -60,7 +60,10 @@ const FeaturedPost = ({ post }: { post: Posts[] }) => {
       <img src={`./images/${images?.mobile}`}
         srcSet={`./images/${images?.mobile} 650w,
 ./images/${images?.desktop} 1280w`}
-        alt={title} />
+        alt={title}
+        sizes="(max-width: 397px) 397px,
+            (max-width: 1918px) 1918px"
+      />
       <div className='featured-text-content'>
         <h2>{title}</h2>
         <p>{content}</p>
